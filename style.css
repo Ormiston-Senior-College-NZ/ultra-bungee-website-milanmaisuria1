@@ -1,87 +1,82 @@
-/* Fonts and Colors */
+/* Basic Styling */
 body {
     font-family: Verdana, Georgia, Arial, sans-serif;
     background-color: #020300; /* Dark background */
     color: #FFFFFF; /* White text */
     margin: 0;
-    padding: 0;
-}
-
-/* Color Variables */
-:root {
-    --dark: #020300;
-    --purple: #683257;
-    --white: #FFFFFF;
-    --gray: #9D8CA1;
-}
-
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Header */
 header {
-    background-color: var(--purple);
-    padding: 15px;
+    background-color: #683257; /* Purple */
+    padding: 10px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    height: 100px; /* Adjust logo size */
+    height: 60px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    gap: 15px;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
-    text-align: center;
+    background: url('img/banner.jpg') center/cover no-repeat;
     padding: 100px 20px;
-    background-image: url('img/banner.jpg'); /* Add your background image */
-    background-size: cover;
-    background-position: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    color: var(--white);
+    font-size: 2.5rem;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    color: var(--gray);
+    font-size: 1.2rem;
+    color: #9D8CA1; /* Grayish-lavender */
 }
 
 /* Buttons */
 .buttons a {
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
     padding: 10px 20px;
-    background-color: var(--purple);
-    color: var(--white);
+    background-color: #683257; /* Purple */
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .buttons a:hover {
-    background-color: var(--gray);
-    color: var(--dark);
+    background-color: #9D8CA1;
+    color: #020300;
+}
+/* Footer */
+footer {
+    background-color: #683257; /* Purple */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
