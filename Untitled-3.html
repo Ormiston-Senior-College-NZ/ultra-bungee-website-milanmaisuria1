@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery - Bungee Adventures</title>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="img/logo.png" alt="Bungee Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bridge.html">Bridge</a></li>
+                <li><a href="Untitled-2.html">Canyon</a></li>
+                <li><a href="Untitled-3.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h1>Bungee Adventures Gallery</h1>
+        <p>Check out the thrill-seekers in action!</p>
+        <div class="gallery-grid">
+            <img src="img/bridge1.jpg" alt="Bridge Jump 1">
+            <img src="img/bridge2.jpg" alt="Bridge Jump 2">
+            <img src="img/canyon1.jpg" alt="Canyon Jump 1">
+            <img src="img/canyon2.jpg" alt="Canyon Jump 2">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Bungee Adventures. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

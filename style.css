@@ -129,3 +129,20 @@ th, td {
     border: 1px solid #FFFFFF;
     text-align: center;
 }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Hide gallery on other pages */
+.gallery {
+    display: none;
+}
+
+/* Only show gallery section on the gallery page */
+body:has(.gallery) .gallery {
+    display: block;
+}
